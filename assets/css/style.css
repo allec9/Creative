@@ -109,18 +109,23 @@ main {
             margin-bottom: 109px;
         }
 
-        & .imgs {
+        & .cards {
             display: flex;
             flex-wrap: wrap;
-            gap: 50px;
+            gap: 109px;
+            justify-content: space-between;
 
+            & .card {
+                & img {
+                    width: 100%;
+                }
+            
             & p {
-                display: flex;
-                font-size: 27px;
+                margin-top: 25px;
+                font-size: 28px;
+                font-weight: 700;
+                color: #000000b2;
             }
-
-            & img {
-                width: 450px;
             }
         }
     }
