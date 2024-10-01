@@ -10,25 +10,39 @@ body {
 }
 
 header {
+    max-width: 1730px;
     display: flex;
     justify-content: space-between;
     padding: 40px 80px;
+    margin: auto;
 
-    & nav  {
+    & nav {
         display: flex;
         gap: 50px;
+        align-items: center;
 
         & ul {
             display: flex;
             gap: 50px;
+
+            & li a {
+                color: gray;
+                font-size: 18px;
+                letter-spacing: 0.02em;
+            }
+
+            & li:first-child a {
+                color: #000000
+            }
         }
 
         & button {
             border-radius: 5px;
-                background-color: rgb(125, 200, 125);
-                padding: 14px 20px;
-                border: none;
-                font-weight: 700px;
+            background-color: rgb(125, 200, 125);
+            padding: 14px 20px;
+            border: none;
+            font-weight: 700px;
+            font-size: 18px;
         }
 
         & button:hover {
@@ -36,33 +50,85 @@ header {
         }
     }
 }
+
+section {
+    max-width: 1730px;
+    margin: auto;
+    padding: 120px;
+}
+
 main {
 
     & .home {
         display: flex;
+        gap: 60px;
+        justify-content: space-between;
+        align-items: center;
 
-        & img {
-            width: 500px;
+        & .content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 600px;
+
+            & p {
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 48px;
+                text-align: left;
+            }
+
+            & h1 {
+                color: #000000;
+                font-size: 70px;
+                font-weight: 700;
+            }
+
+            & button {
+                width: 246.49px;
+                padding: 10.87px;
+                border-radius: 10.87px;
+                border: none;
+                background: #1f1f39;
+                font-size: 24.24px;
+                font-weight: 700;
+                color: #ffff;
+            }
         }
     }
 
     & .portifolio {
         display: flex;
-flex-direction: column;
+        flex-direction: column;
+
+        & h1 {
+            width: 1019px;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 60px;
+            margin-bottom: 109px;
+        }
 
         & .imgs {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            
+            gap: 50px;
+
             & p {
                 display: flex;
-
+                font-size: 27px;
             }
 
             & img {
-                width: 400px;
+                width: 450px;
             }
         }
+    }
+
+    .about {
+        background: #000000;
+        color: aliceblue;
+
+
     }
 }
