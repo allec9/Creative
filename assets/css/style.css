@@ -3,10 +3,11 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: linear-gradient(#f05e5e, #62f554, #3019ff, #000000);
+    background: linear-gradient(#f05e5e, #62f554, #3019ff, #00000085);
 }
 
 header {
@@ -15,6 +16,11 @@ header {
     justify-content: space-between;
     padding: 40px 80px;
     margin: auto;
+    position: sticky;
+    top: 0;
+
+    background-color: #ffffff75;
+    backdrop-filter: blur(10px);
 
     & nav {
         display: flex;
@@ -26,7 +32,7 @@ header {
             gap: 50px;
 
             & li a {
-                color: gray;
+                color: rgb(65, 63, 63);
                 font-size: 18px;
                 letter-spacing: 0.02em;
             }
@@ -133,7 +139,21 @@ main {
     .about {
         background: #000000;
         color: aliceblue;
-
+        
+        & button {
+            width: 246.49px;
+                padding: 10.87px;
+                border-radius: 10.87px;
+                border: none;
+                background: #1f1f39;
+                font-size: 24.24px;
+                font-weight: 700;
+                color: #ffff;
+        }
 
     }
+}
+footer {
+    display: flex;
+    justify-content: space-between;
 }
